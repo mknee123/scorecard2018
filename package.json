@@ -1,0 +1,28 @@
+{
+  "name": "scorecard2018.pittsburghregion.org",
+  "version": "1.0.0",
+  "description": "The Pittsburgh Regional Alliance anual scorecard website. This the 2018 scorecard.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mknee123/scorecard2018.git"
+  },
+  "keywords": [
+    "Pittsburgh",
+    "Regional",
+    "Alliance",
+    "Pittsburgh",
+    "Scorecard",
+    "2018",
+    "Scorecard"
+  ],
+  "author": "Miranda Knee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mknee123/scorecard2018/issues"
+  },
+  "homepage": "https://github.com/mknee123/scorecard2018#readme"
+}
