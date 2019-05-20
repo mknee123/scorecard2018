@@ -77,8 +77,16 @@ jQuery(document).ready(function($){
         $main.removeClass('lateral-menu-is-open');
         $body.removeClass('overflow-hidden');
         }
+    
+    function recheck() {
+        if( $main.hasClass('lateral-menu-is-open') ) {
+            return $body.addCLass('overflow-hidden');
+        }
+        $body.removeClass('overflow-hidden');
+    }    
 
         $window
             .resize(resize)
             .trigger('resize');
+        $window.resize(recheck).trigger('resize');    
 });
