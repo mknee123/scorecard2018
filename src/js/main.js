@@ -58,5 +58,25 @@ jQuery(document).ready(function($){
 	$('.item-has-children').children('a').on('click', function(event){
 		event.preventDefault();
 		$(this).toggleClass('submenu-open').next('.sub-menu').slideToggle(200).end().parent('.item-has-children').siblings('.item-has-children').children('a').removeClass('submenu-open').next('.sub-menu').slideUp(200);
-	});
+    });
+    
+    //for mobile remove class on header, nav and content
+    var $window = $(window),
+        $menuOpen = $('nav'),
+        $header = $('header'),
+        $main = $('main');
+
+    function resize() {
+        if ($window.width() > 768) {
+            return $menuOpen.addClass('lateral-menu-is-open') && $header.addClass('lateral-menu-is-open') && $main.addClass('lateral-menu-is-open');
+        }
+
+        $menuOpen.removeClass('lateral-menu-is-open');
+        $header.removeClass('lateral-menu-is-open');
+        $main.removeClass('lateral-menu-is-open');
+        }
+
+        $window
+            .resize(resize)
+            .trigger('resize');
 });
