@@ -294,7 +294,7 @@ Main components
     /* the secondary navigation is covered by the main element */
     z-index: 1;
     width: 260px;
-    background-color: #242e30;
+    background-color: #40424d;
     overflow-y: auto;
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
@@ -320,11 +320,14 @@ Main components
     display: block;
     line-height: 2em;
     padding: 0 16px 0 32px;
-    color: #aab5b7;
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--open-sans-condense);
+    font-size:1.25rem;
   }
   #cd-lateral-nav a.current {
-    background-color: #3a4a4d;
-    color: #FFF;
+    background-color: #fff;
+    color: #40424d;;
   }
   .no-touch #cd-lateral-nav a:hover {
     color: #FFF;
@@ -360,6 +363,14 @@ Main components
     font-weight: 600;
     /* this is the right arrow to show that the item has a submenu  */
   }
+    /* style menu items which have a submenu  */
+  #cd-lateral-nav .item-has-children.capitalize > a {
+      text-transform: capitalize;
+  }
+  #cd-lateral-nav .upper > a {
+    text-transform: uppercase;
+    font-weight: 600;
+}
   #cd-lateral-nav .item-has-children > a::after {
     content: '';
     display: block;
@@ -407,4 +418,27 @@ Opening
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.color-overlay {
+  position: absolute;
+  background: #000;
+  opacity: .6;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.opening-text {
+  color: white;
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  display: block;
+}
+#site-title {
+  font-family: var(--open-sans-condense);
+  font-size:8rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  
 }
