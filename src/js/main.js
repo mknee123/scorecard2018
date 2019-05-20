@@ -64,16 +64,18 @@ jQuery(document).ready(function($){
     var $window = $(window),
         $menuOpen = $('nav'),
         $header = $('header'),
-        $main = $('main');
+        $main = $('main'),
+        $body = $('body');
 
     function resize() {
         if ($window.width() > 768) {
-            return $menuOpen.addClass('lateral-menu-is-open') && $header.addClass('lateral-menu-is-open') && $main.addClass('lateral-menu-is-open');
+            return $menuOpen.addClass('lateral-menu-is-open') && $header.addClass('lateral-menu-is-open') && $main.addClass('lateral-menu-is-open') && $body.addCLass('overflow-hidden');
         }
 
         $menuOpen.removeClass('lateral-menu-is-open');
         $header.removeClass('lateral-menu-is-open');
         $main.removeClass('lateral-menu-is-open');
+        $body.removeClass('overflow-hidden');
         }
 
         $window
