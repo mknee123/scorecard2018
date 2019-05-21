@@ -24,6 +24,8 @@
 .padding-bottom { padding-bottom: 2rem;}
 .padding-top-bottom { padding-top: 2rem; padding-bottom: 2rem;}
 .text-upper { text-transform: uppercase;}
+.text-capitalize { text-transform: capitalize;}
+.text-normal-case { text-transform: none;}
 .text-center { text-align: center;}
 
 /** TEXT STYLES **/
@@ -34,16 +36,20 @@ h1 {
 
 h2 {
     font-family: var(--open-sans);
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+    margin-top:1.5rem;
 }
 
 h3 {
     font-family: var(--open-sans);
-    font-size: 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 p {
   font-family: var(--open-sans);
   font-size:1rem;
+  margin-top: 10px;
+  line-height: 1.3;
 }
 small {
   font-size: .75rem;
@@ -58,7 +64,15 @@ sup {
   vertical-align: super;
   font-size: smaller;
 }
-
+ul {
+  list-style-type: disc;
+  text-align: left;
+  margin-top:1rem;
+  margin-left:1rem;
+}
+ul li {
+  margin-top:.5rem;
+}
 /* -------------------------------- 
 
 Nav Related 
@@ -78,6 +92,7 @@ html * {
   html, body {
     /* you need to set this to assign to the main element a min height of 100% */
     height: 100%;
+    font-family: var(--open-sans);
   }
 
 /* -------------------------------- 
@@ -94,7 +109,8 @@ Modules - reusable parts of our design
   }
   
   .overflow-hidden {
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
   }
 
 /* -------------------------------- 
@@ -470,6 +486,7 @@ Opening
   display: block;
   width: 92%;
   max-width: 1200px;
+  padding: 0 .5rem;
   margin: 0 auto;
   left: 0;
   text-align: center;
@@ -518,11 +535,17 @@ Opening
 .quote-credit {
   font-size:.9rem;
   transition: all .2s ease-in-out;
+  font-weight: 400;
 }
 
 /**headlines **/
 .wrapper {
   left: 0;
+  position: relative;
+  padding: 0 1rem;
+  
+}
+.underline {
   position: relative;
 }
 .underline::after {
@@ -534,7 +557,101 @@ Opening
   width: 50px;
   border-bottom: 2px solid black;
 }
+.quote-2 {
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.2;
+  transition: all .2s ease-in-out;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.quote-credit-2 {
+  font-size:.9rem;
+  transition: all .2s ease-in-out;
+  font-weight: 400;
+}
 
+.quote-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width:900px;
+  justify-content: center;
+  align-items: center;
+}
+.quote-img {
+  max-width:300px;
+  width: 100%;
+  display: block;
+  margin: 0 1rem;
+}
+.quote-container {
+  margin:0 auto;
+}
+.numbers-red {
+  color: var(--scorecard-red);
+}
+.numbers-green {
+  color: var(--scorecard-green);
+}
+.numbers-orange {
+  color: var(--scorecard-orange);
+}
+.numbers-lg {  
+  font-size: 7rem;
+  font-family: var(--open-sans);
+  font-weight: 700;
+}
+.numbers-lg-txt {
+  font-family: var(--open-sans);
+  font-size:2rem;
+  font-weight: 700;
+}
+.numbers-md-text {
+  font-family: var(--open-sans);
+  font-size:2rem;
+}
+.numbers-lg-lite {
+  font-family: var(--open-sans);
+  font-size: 5rem;
+}
+.numbers-sm-txt {
+  font-family: var(--open-sans);
+  font-size: 1.25rem;
+}
+.sm-arrow {
+  max-width:15px;
+}
+.md-arrow {
+  max-width:25px;
+}
+.numbers-flex {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.numbers-flex div {
+  padding:0 1rem;
+}
+.button {
+  margin: 0 auto;
+  max-width: max-content;
+  border: 1px solid black;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.button a {
+  text-decoration: none;
+  color: black;
+}
+.button:hover {
+background: black;
+}
+.button:hover a {
+  color:white;
+}
 @media only screen and (min-width: 768px) {
   .opening-text {
     width: 92%;
@@ -547,8 +664,12 @@ Opening
   .quote {
     font-size:1.25rem;
   }
+  
   .wrapper {
     left: 10%;
+  }
+  .quote-2 {
+    font-size: 1.28rem;
   }
 }
 
