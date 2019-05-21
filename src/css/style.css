@@ -32,6 +32,7 @@
 h1 {
     font-family: var(--open-sans-condense);
     font-size: 5rem;
+    font-weight: 700;
 }
 
 h2 {
@@ -49,6 +50,7 @@ h4 {
   font-family: var(--open-sans);
   font-size: 1.125rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 p {
   font-family: var(--open-sans);
@@ -72,13 +74,13 @@ sup {
   vertical-align: super;
   font-size: smaller;
 }
-ul {
+main ul {
   list-style-type: disc;
   text-align: left;
   margin-top:1rem;
   margin-left:1rem;
 }
-ul li {
+main ul li {
   margin-top:.5rem;
 }
 /* -------------------------------- 
@@ -666,6 +668,7 @@ background: black;
   margin-left: auto;
   max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .investor-post {
@@ -705,6 +708,28 @@ background: black;
   background: var(--post-bg-color);
   border-top: solid 3px var(--post-divider-bar);
   max-width: 350px;
+}
+.deeper-dive-flex {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.dive-box {
+  flex: 1;
+  padding: 1rem;
+}
+.dive-box p {
+  padding: 0 1rem;
+}
+.dive-box ul {
+  margin-left: 1.5rem;
+}
+.bg-grey {
+  background: var(--post-bg-color);
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
