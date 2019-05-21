@@ -10,7 +10,23 @@
     font-size: 14px;
 
 }
+/*** COMMON STYLES ***/
+.thin-margin-top { margin-top: 1rem;}
+.margin-top { margin-top: 3rem;}
+.medium-margin-top { margin-top: 5rem;}
+.thin-margin-bottom { margin-bottom: 1rem;}
+.margin-bottom { margin-bottom: 3rem;}
+.medium-margin-bottom { margin-bottom: 5rem;}
+.thin-padding-top { padding-top: 1rem;}
+.thin-padding-bottom { padding-bottom: 1rem;}
+.thin-padding-top-bottom { padding-top: 1rem; padding-bottom:1rem;}
+.padding-top { padding-top: 2rem;}
+.padding-bottom { padding-bottom: 2rem;}
+.padding-top-bottom { padding-top: 2rem; padding-bottom: 2rem;}
+.text-upper { text-transform: uppercase;}
+.text-center { text-align: center;}
 
+/** TEXT STYLES **/
 h1 {
     font-family: var(--open-sans-condense);
     font-size: 5rem;
@@ -24,6 +40,23 @@ h2 {
 h3 {
     font-family: var(--open-sans);
     font-size: 2rem;
+}
+p {
+  font-family: var(--open-sans);
+  font-size:1rem;
+}
+small {
+  font-size: .75rem;
+}
+strong {
+  font-weight: 700;
+}
+em {
+  font-style: italic;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
 }
 
 /* -------------------------------- 
@@ -71,11 +104,11 @@ Main components
 -------------------------------- */
 .cd-main-content {
     /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
-    min-height: 100%;
+    /* min-height: 100%; */
     position: relative;
     /* background-color: #f5f4e9; */
     z-index: 2;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -96,7 +129,7 @@ Main components
   }
   @media only screen and (min-width: 768px) {
     .cd-main-content {
-      padding-top: 70px;
+      /* padding-top: 70px; */
     }
   }
   
@@ -421,6 +454,7 @@ Opening
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 .color-overlay {
   position: absolute;
@@ -433,13 +467,138 @@ Opening
 .opening-text {
   color: white;
   position: relative;
+  display: block;
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+  left: 0;
+  text-align: center;
+  transition: all .2s ease-in-out;
 }
 #site-title {
   font-family: var(--open-sans-condense);
-  font-size:6rem;
+  font-size:3.5rem;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
-  transform: translateX(calc(50vw));
+  transition: all .2s ease-in-out;
+}
+#tag-line {
+  font-family: var(--open-sans-condense);
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+#site-description {
+  font-family: var(--open-sans-condense);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 1rem auto;
+  padding: .5rem .75rem;
+  border: 1px solid white;
+  max-width: 600px;
+  transition: all .2s ease-in-out;
+}
+.accd-logo {
+  max-width: 160px;
+  width: 100%;
+  transition: all .2s ease-in-out;
+}
+
+.quote {
+  font-family: var(--open-sans);
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.2;
+  transition: all .2s ease-in-out;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.quote-credit {
+  font-size:.9rem;
+  transition: all .2s ease-in-out;
+}
+
+/**headlines **/
+.wrapper {
+  left: 0;
+  position: relative;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  width: 50px;
+  border-bottom: 2px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+  .opening-text {
+    width: 92%;
+    left: 10%;
+  }
   
+  #site-title {
+    font-size:4.0rem;
+  }
+  .quote {
+    font-size:1.25rem;
+  }
+  .wrapper {
+    left: 10%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .opening-text {
+    width: 92%;
+    left: 8%;
+  }
+  #site-title {
+    font-size:4.5rem;
+  }
+  #tag-line {
+    font-size: 3rem;
+  }
+  #site-description {
+    font-size: 1.75rem;
+  }
+  .accd-logo {
+    max-width: 160px;
+  }
+  .quote {
+    line-height: 1.2;
+  }
+  .quote-credit {
+    font-size:.9rem;
+  }
+  .wrapper {
+    left: 8%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .opening-text {
+    width: 92%;
+    left: 5%;
+  }
+  #site-title {
+    font-size:6rem;
+  }
+  #tag-line {
+    font-size: 3.5rem;
+  }
+  #site-description {
+    font-size: 2rem;
+  }
+  .quote {
+    line-height: 1.2;
+    font-size:1.5rem;
+  }
+  .wrapper {
+    left: 5%;
+  }
 }
