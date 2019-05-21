@@ -38,21 +38,21 @@ jQuery(document).ready(function($){
 	});
 
 	//close lateral menu clicking outside the menu itself
-	$content_wrapper.on('click', function(event){
-		if( !$(event.target).is('#cd-menu-trigger, #cd-menu-trigger span') ) {
-			$lateral_menu_trigger.removeClass('is-clicked');
-			$navigation.removeClass('lateral-menu-is-open');
-			$content_wrapper.removeClass('lateral-menu-is-open').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				$('body').removeClass('overflow-hidden');
-			});
-			$('#cd-lateral-nav').removeClass('lateral-menu-is-open');
-			//check if transitions are not supported
-			if($('html').hasClass('no-csstransitions')) {
-				$('body').removeClass('overflow-hidden');
-			}
+	// $content_wrapper.on('click', function(event){
+	// 	if( !$(event.target).is('#cd-menu-trigger, #cd-menu-trigger span') ) {
+	// 		$lateral_menu_trigger.removeClass('is-clicked');
+	// 		$navigation.removeClass('lateral-menu-is-open');
+	// 		$content_wrapper.removeClass('lateral-menu-is-open').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+	// 			$('body').removeClass('overflow-hidden');
+	// 		});
+	// 		$('#cd-lateral-nav').removeClass('lateral-menu-is-open');
+	// 		//check if transitions are not supported
+	// 		if($('html').hasClass('no-csstransitions')) {
+	// 			$('body').removeClass('overflow-hidden');
+	// 		}
 
-		}
-	});
+	// 	}
+	// });
 
 	//open (or close) submenu items in the lateral menu. Close all the other open submenu items.
 	$('.item-has-children').children('a').on('click', function(event){
@@ -69,7 +69,7 @@ jQuery(document).ready(function($){
 
     function resize() {
         if ($window.width() > 768) {
-            return $menuOpen.addClass('lateral-menu-is-open') && $header.addClass('lateral-menu-is-open') && $main.addClass('lateral-menu-is-open') && $body.addCLass('overflow-hidden');
+            return $menuOpen.addClass('lateral-menu-is-open') && $header.addClass('lateral-menu-is-open') && $main.addClass('lateral-menu-is-open') && $body.addClass('overflow-hidden');
         }
 
         $menuOpen.removeClass('lateral-menu-is-open');
@@ -79,8 +79,8 @@ jQuery(document).ready(function($){
         }
     
     function recheck() {
-        if( $main.hasClass('lateral-menu-is-open') ) {
-            return $body.addCLass('overflow-hidden');
+        if( $menuOpen.hasClass('lateral-menu-is-open') ) {
+            return $body.addClass('overflow-hidden');
         }
         $body.removeClass('overflow-hidden');
     }    
