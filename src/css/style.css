@@ -33,6 +33,7 @@ h1 {
     font-family: var(--open-sans-condense);
     font-size: 5rem;
     font-weight: 700;
+    word-wrap: break-word;
 }
 
 h2 {
@@ -674,6 +675,8 @@ background: black;
 .investor-post {
  position: relative;
  padding: 1rem;
+ max-width: 350px;
+ width: 100%;
 }
 .img-container {
   position: relative;;
@@ -730,6 +733,13 @@ background: black;
 .bg-grey {
   background: var(--post-bg-color);
   padding: 1rem;
+}
+
+/**sector icons**/
+.sector-icon {
+  display: block;
+  max-width: 100px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
