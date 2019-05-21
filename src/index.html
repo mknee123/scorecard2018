@@ -22,9 +22,9 @@
             <li><a href="#0">Login</a></li>
           </ul>
         </nav> -->
-        <a id="cd-menu-trigger" href="#0"><span class="cd-menu-icon"></span></a>
+        <a id="cd-menu-trigger" class="is-clicked" href="#0"><span class="cd-menu-icon"></span></a>
       </header>
-      <main class="cd-main-content lateral-menu-is-open ">
+      <main id="home" class="cd-main-content lateral-menu-is-open ">
         <div class="container opening-bg padding-top-bottom">
             <div class="color-overlay"></div>
             <div class="opening-text">
@@ -65,12 +65,10 @@
               <h2>Energy Sector Activity Rebounds</h2>
               <p><em>Deals More Than Doubled</em></p>
             </div>
-
             <div class="quote-flex">
-              <div>
+              <div class="margin-top margin-bottom">
                 <img class="quote-img" src="img/LauraShapiraKaret_PRA.jpg" alt="Laura Shapira Karet, Pittsburgh Regional Alliance Chairperson">
-              </div>
-              
+              </div>         
               <div class="quote-container">
                   <div class="quote-2">
                       “This region has a diverse and strong economic foundation, reinforced and amplified by innovation.  Our economy is grounded in mainstay industries like finance, energy, manufacturing and life sciences and healthcare. Technology and innovation – a big part of the face of this region today – are boosting our core industries with next-generation advances.  This puts businesses here, and those who do business with Pittsburgh, at the edge of next-generation opportunities and possibilities. Our accomplishments are exciting, but we know more is possible. We’re going to supercharge our efforts and build on these investment successes to further grow the region’s economy and our competitiveness.”   
@@ -79,8 +77,7 @@
                   
               </div>
             </div>
-        </div>
-          
+        </div>     
       </section>
        <!--snapshot-->
       <section id="snapshot">
@@ -196,7 +193,7 @@
                   <!--Rye Development-->
                   <div class="investor-post">
                       <div class="img-container">
-                          <img src="img/ryelogo.svg" alt="Rye Development logo">
+                        <img class="inner-padding" src="img/ryelogo.svg" alt="Rye Development logo">
                       </div>
                       <div class="post-container">
                         <h3>Rye Development</h3>
@@ -224,8 +221,9 @@
                   </div>
                   <!--end of investor post-->
                 </div><!--end of investors-flex-->
-                </div><!--end of investors wrapper-->
-                <p class="text-center"><em>*CAPEX total include both announced investment and development projects </em></p>
+                <p class="text-center margin-top"><em>*CAPEX total include both announced investment and development projects </em></p>
+              </div><!--end of investors wrapper-->
+                
               </div><!--close of wrapper-->
           </section>
           <section id="it-robotics">
@@ -288,7 +286,6 @@
                 </div>
                 <!--end of deeper dive section-->
                 <!--who's investing-->
-                
                 <div id="investing-1" class="investors medium-margin-top medium-margin-bottom">
                     <img class="sector-icon" src="img/scorecard_icon_IT.svg" alt="IT and Robotics icon">
                     <h4 class="underline thin-margin-top text-center">Who's Investing</h4>
@@ -296,7 +293,7 @@
                       <!--Affirm-->
                       <div class="investor-post">
                         <div class="img-container padding-top-bottom">
-                            <img src="img/affirm.png" alt="Affirm logo">   
+                            <img class="investor-logo" src="img/affirm.png" alt="Affirm logo">   
                         </div>
                         <div class="post-container">
                           <h3>Affirm</h3>
@@ -311,21 +308,21 @@
                       <!--end of investor post-->
                       <!--Amazon-->
                       <div class="investor-post">
-                          <div class="img-container">
-                              <img src="img/Amazon_logo.png" alt="Amazon logo">
-                          </div>
-                          <div class="post-container">
-                            <h3>Amazon</h3>
-                            <p><strong>$3M</strong></p>
-                            <ul>
-                              <li>“Pittsburgh Tech Hub,” 22,000 SF expansion</li>
-                              <li>Focused on machine translation and speech science</li>
-                              <li>125 new jobs</li>
-                            </ul>
-                            <p><small><em>City of Pittsburgh (South Side)</em></small></p>
-                          </div>
+                        <div class="img-container">
+                            <img class="investor-logo" src="img/Amazon_logo.png" alt="Amazon logo">
                         </div>
-                        <!--end of investor post-->
+                        <div class="post-container">
+                          <h3>Amazon</h3>
+                          <p><strong>$3M</strong></p>
+                          <ul>
+                            <li>“Pittsburgh Tech Hub,” 22,000 SF expansion</li>
+                            <li>Focused on machine translation and speech science</li>
+                            <li>125 new jobs</li>
+                          </ul>
+                          <p><small><em>City of Pittsburgh (South Side)</em></small></p>
+                        </div>
+                      </div>
+                      <!--end of investor post-->
                       <!--Bossa Nova Robotics-->
                       <div class="investor-post">
                         <div class="img-container">
@@ -373,7 +370,7 @@
                      <!--IAM Robotics-->
                      <div class="investor-post">
                         <div class="img-container">
-                            <img src="img/IamRobotics.svg" alt="IAM Robotics">
+                          <img class="investor-logo inner-padding" src="img/IamRobotics.svg" alt="IAM Robotics">
                         </div>
                         <div class="post-container">
                           <h3>IAM Robotics</h3>
@@ -388,67 +385,61 @@
                       </div>
                       <!--end of investor post-->  
                     <!--Lucas Systems-->
-                     <div class="investor-post">
-                        <div class="img-container">
-                            <img src="img/LucasSystems_logo.png" alt="Lucas Systems">
-                            <!-- <div class="img-credit-bg">
-                                <p class="img-credit"><small>Photo Credit: CBRE</small></p>
-                            </div> -->
-                        </div>
-                        <div class="post-container">
-                          <h3>Lucas Systems</h3>
-                          <p><strong>$7.3M</strong></p>
-                          <ul>
-                            <li>Headquarters, 45,000 SF expansion</li>
-                            <li>55 new jobs</li>
-                            <li>66 retained jobs</li>
-                            <li>121 total job impact</li>
-                          </ul>
-                          <p><small><em>Wexford, Pa. (Allegheny County)</em></small></p>
-                        </div>
+                    <div class="investor-post">
+                      <div class="img-container">
+                        <img class="investor-logo inner-padding" src="img/LucasSystems_logo.png" alt="Lucas Systems">
                       </div>
-                      <!--end of investor post--> 
+                      <div class="post-container">
+                        <h3>Lucas Systems</h3>
+                        <p><strong>$7.3M</strong></p>
+                        <ul>
+                          <li>Headquarters, 45,000 SF expansion</li>
+                          <li>55 new jobs</li>
+                          <li>66 retained jobs</li>
+                          <li>121 total job impact</li>
+                        </ul>
+                        <p><small><em>Wexford, Pa. (Allegheny County)</em></small></p>
+                      </div>
+                    </div>
+                    <!--end of investor post--> 
                     <!--RE2 Robotics-->
                     <div class="investor-post">
-                        <div class="img-container">
-                            <img src="img/RE2_Robotics_Investor.jpg" alt="RE2 Robotics">
-                            <div class="img-credit-bg">
-                                <p class="img-credit"><small>Photo Credit: RE2</small></p>
-                            </div>
-                        </div>
-                        <div class="post-container">
-                          <h3>RE2 Robotics</h3>
-                          <ul>
-                            <li>Headquarters expansion</li>
-                            <li>Develops human-like robotic arms for use by organizations including the U.S. Department of Defense</li>
-                            <li>9 new jobs</li>
-                            <li>46 total job impact</li>
-                          </ul>
-                          <p><small><em>City of Pittsburgh (Lawrenceville)</em></small></p>
+                      <div class="img-container">
+                        <img src="img/RE2_Robotics_Investor.jpg" alt="RE2 Robotics">
+                        <div class="img-credit-bg">
+                            <p class="img-credit"><small>Photo Credit: RE2</small></p>
                         </div>
                       </div>
-                      <!--end of investor post--> 
+                      <div class="post-container">
+                        <h3>RE2 Robotics</h3>
+                        <ul>
+                          <li>Headquarters expansion</li>
+                          <li>Develops human-like robotic arms for use by organizations including the U.S. Department of Defense</li>
+                          <li>9 new jobs</li>
+                          <li>46 total job impact</li>
+                        </ul>
+                        <p><small><em>City of Pittsburgh (Lawrenceville)</em></small></p>
+                      </div>
+                    </div>
+                    <!--end of investor post--> 
                     <!--Voci Technologies-->
                     <div class="investor-post">
-                        <div class="img-container">
-                            <img src="img/Voci_Logo.png" alt="Voci Technologies logo">
-                            <div class="img-credit-bg">
-                                <p class="img-credit"><small>Photo Credit: RE2</small></p>
-                            </div>
-                        </div>
-                        <div class="post-container">
-                          <h3>Voci Technologies</h3>
-                          <ul>
-                            <li>CMU spinout utilizing artificial intelligence to analyze voice data</li>
-                            <li>Headquarters expansion</li>
-                            <li>11,000 SF new facility </li>
-                            <li>50 new jobs</li>
-                            <li>Up to 19 retained jobs</li>
-                          </ul>
-                          <p><small><em>City of Pittsburgh (Strip District)</em></small></p>
-                        </div>
+                      <div class="img-container">
+                        <img class="investor-logo inner-padding" src="img/Voci_Logo.png" alt="Voci Technologies logo">
                       </div>
-                      <!--end of investor post-->      
+                      <div class="post-container">
+                        <h3>Voci Technologies</h3>
+                        <ul>
+                          <li>CMU spinout utilizing artificial intelligence to analyze voice data</li>
+                          <li>Headquarters expansion</li>
+                          <li>11,000 SF new facility </li>
+                          <li>50 new jobs</li>
+                          <li>Up to 19 retained jobs</li>
+                        </ul>
+                        <p><small><em>City of Pittsburgh (Strip District)</em></small></p>
+                      </div>
+                    </div>
+                    <!--end of investor post-->      
                   </div><!--end of investors-flex-->
                 </div><!--end of investors wrapper-->
                 <!-- IT & Robotics Quotes -->
@@ -470,7 +461,6 @@
                 <div class="medium-margin-bottom">
                   <div class="quote-flex">
                     <img class="quote-img" src="img/IamRobotics.svg" alt="I AM Robotics logo">
-                  
                     <div class="quote-container">
                         <div class="quote-2">
                             “Pittsburgh is a bigger, more capable, more influential robotics center than the world knows. Other regions are more commonly known for their progress. However, that is changing rapidly. Talent, investors, and customers are now paying attention to Pittsburgh, and this is due to our community’s collective effort to broadcast our story and create critical connections around the world.”  
@@ -487,7 +477,7 @@
         <section id="manufacturing">
             <div class="wrapper medium-margin-top margin-bottom">
               <img class="sector-icon" src="img/scorecard_icon_Manufacturing.svg" alt="Manufacturing icon">
-              <h1 class="text-center margin-top text-upper">	Manufacturing</h1>  
+              <h1 class="text-center margin-top text-upper">Manufacturing</h1>  
               <h2 class="text-center">Built to Last, Manufacturing Remains Strong</h2>
               <h2 class="text-center">No. 2 “Most Active” Sector for Deals Across SW Pennsylvania</h2>
               <div class="medium-margin-bottom">
@@ -541,7 +531,7 @@
                   <!--American Textile Company-->
                   <div class="investor-post">
                     <div class="img-container padding-top-bottom">
-                        <img src="img/AmericanTextile_Logo.jpg" alt="American Textile Company logo">   
+                      <img class="investor-logo" src="img/AmericanTextile_Logo.jpg" alt="American Textile Company logo">  
                     </div>
                     <div class="post-container">
                       <h3>American Textile Company</h3>
@@ -559,7 +549,7 @@
                   <!--Ellwood Quality Steel (EQS)-->
                   <div class="investor-post">
                     <div class="img-container padding-top-bottom">
-                        <img src="img/EQS_Logo.png" alt="Ellwood Quality Steel (EQS) logo">   
+                      <img class="investor-logo inner-padding" src="img/EQS_Logo.png" alt="Ellwood Quality Steel (EQS) logo">   
                     </div>
                     <div class="post-container">
                       <h3>Ellwood Quality Steel (EQS)</h3>
@@ -574,22 +564,22 @@
                   <!--end of investor post-->
                   <!--Kenson Plastics-->
                   <div class="investor-post">
-                      <div class="img-container">
-                          <img src="img/KensonPlastics_Investor.jpg" alt="Kenson Plastics">   
-                          <div class="img-credit-bg">
-                              <p class="img-credit"><small>Photo Credit: Emmanuel Panagiotakis, PittsburghPictures.net</small></p>
-                          </div>
-                      </div>
-                      <div class="post-container">
-                        <h3>Kenson Plastics</h3>
-                        <p><strong>$1.7M</strong> expansion</p>
-                        <ul>
-                          <li>Plastics for the aerospace, mass transit and medical industries and more</li>
-                          <li>15 new jobs</li>
-                          <li>80 retained jobs</li>
-                        </ul>
-                        <p><small><em>Chippewa, Pa. (Beaver County)</em></small></p>
-                      </div>
+                    <div class="img-container">
+                        <img src="img/KensonPlastics_Investor.jpg" alt="Kenson Plastics">   
+                        <div class="img-credit-bg">
+                            <p class="img-credit"><small>Photo Credit: Emmanuel Panagiotakis, PittsburghPictures.net</small></p>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                      <h3>Kenson Plastics</h3>
+                      <p><strong>$1.7M</strong> expansion</p>
+                      <ul>
+                        <li>Plastics for the aerospace, mass transit and medical industries and more</li>
+                        <li>15 new jobs</li>
+                        <li>80 retained jobs</li>
+                      </ul>
+                      <p><small><em>Chippewa, Pa. (Beaver County)</em></small></p>
+                    </div>
                   </div>
                   <!--end of investor post-->  
                   <!--Bergad, Inc.-->
@@ -633,7 +623,7 @@
         <section id="finance">
             <div class="wrapper medium-margin-top margin-bottom">
               <img class="sector-icon" src="img/scorecard_icon_Finance.svg" alt="Financial & Business Services icon">
-              <h1 class="text-center margin-top text-upper">Financial & Business Services</h1>  
+              <h1 class="text-center margin-top text-upper">Financial & <br/> Business Services</h1>  
               <h2 class="text-center">A Century-Plus of Expertise in Asset Management, Banking and Corporate Support </h2>
               <div class="medium-margin-bottom">
               <div id="numbers-3" class="numbers-flex text-center text-upper margin-top">
@@ -687,7 +677,7 @@
                   <!--Bechtel Plant Machinery-->
                   <div class="investor-post">
                     <div class="img-container padding-top-bottom">
-                        <img src="img/bechtel_Logo.jpg" alt="Bechtel Plant Machinery logo">   
+                        <img class="investor-logo" src="img/bechtel_Logo.jpg" alt="Bechtel Plant Machinery logo">   
                     </div>
                     <div class="post-container">
                       <h3>Bechtel Plant Machinery</h3>
@@ -723,7 +713,7 @@
                   <!--Roadrunner Recycling, Inc.-->
                   <div class="investor-post">
                     <div class="img-container padding-top-bottom">
-                        <img src="img/Roadrunner_Logo.png" alt="Roadrunner Recycling, Inc.">   
+                      <img class="investor-logo " src="img/Roadrunner_Logo.png" alt="Roadrunner Recycling, Inc.">   
                     </div>
                     <div class="post-container">
                       <h3>Roadrunner Recycling, Inc.</h3>
@@ -763,7 +753,7 @@
               <img class="sector-icon" src="img/scorecard_icon_Energy.svg" alt="Energy icon">
               <h1 class="text-center margin-top text-upper">Energy</h1>  
               <div class="medium-margin-bottom">
-              <div id="numbers-4" class="numbers-flex text-center text-upper margin-top">
+                <div id="numbers-4" class="numbers-flex text-center text-upper margin-top">
                   <div class="margin-bottom">
                       <span class="numbers-lg numbers-red">32</span>
                       <p class="numbers-md-text">Deals</p> 
@@ -778,7 +768,7 @@
                       <span class="numbers-lg numbers-orange">3,322</span>
                       <p class="numbers-md-text">Total Jobs</p> 
                   </div>   
-              </div><!--end of numbers flex-->
+                </div><!--end of numbers flex-->
               </div>
               <!--Deeper Dive-->
               <h4 class="underline text-center">Deeper Dive</h4>
@@ -806,7 +796,7 @@
                   <!--APV Renaissance Partners Opco LLC-->
                   <div class="investor-post">
                     <div class="img-container padding-top-bottom">
-                        <img src="img/APV_Logo.png" alt="APV Renaissance Partners Opco LLC logo">   
+                        <img class="investor-logo inner-padding" src="img/APV_Logo.png" alt="APV Renaissance Partners Opco LLC logo">   
                     </div>
                     <div class="post-container">
                       <h3>APV Renaissance Partners Opco LLC</h3>
@@ -822,8 +812,7 @@
                   <!--Nine Energy Services-->
                   <div class="investor-post">
                     <div class="img-container">
-                        <img src="img/NineEnergy_Logo.jpg" alt="Nine Energy Services">  
-                       
+                        <img src="img/NineEnergy_Logo.jpg" alt="Nine Energy Services">    
                     </div>
                     <div class="post-container">
                       <h3>Nine Energy Services</h3>
@@ -859,7 +848,7 @@
               <!--Quote-->
               <div class="margin-top medium-margin-bottom">
                 <div class="quote-flex">
-                  <img class="quote-img" src="img/WattFuelCell_Investor.jpg" alt="Watt Fuel Cell">
+                  <img class="quote-img" src="img/watt-logo.png" alt="Watt Fuel Cell Logo">
                   <div class="quote-container">
                     <div class="quote-2">
                       “[Moving operations and manufacturing to Westmoreland County] was a natural for us as this region has been a hotbed of energy innovation for centuries where companies such as Westinghouse were founded over a hundred years ago.”
@@ -879,7 +868,7 @@
          <section id="healthcare">
             <div class="wrapper medium-margin-top margin-bottom">
               <img class="sector-icon" src="img/scorecard_icon_Healthcare.svg" alt="Healthcare & Life Sciences icon">
-              <h1 class="text-center margin-top text-upper">Healthcare & Life Sciences</h1>  
+              <h1 class="text-center margin-top text-upper">Healthcare &<br/> Life Sciences</h1>  
               <div class="medium-margin-bottom">
               <div id="numbers-5" class="numbers-flex text-center text-upper margin-top">
                   <div class="margin-bottom">
@@ -916,13 +905,13 @@
               </div>
               <!--end of deeper dive section-->
               <!--who's investing-->
-              <div id="investing-6" class="investors medium-margin-top medium-margin-bottom">
+              <div id="investing-5" class="investors medium-margin-top medium-margin-bottom">
                 <img class="sector-icon" src="img/scorecard_icon_Energy.svg" alt="Energy icon">
                 <h4 class="underline thin-margin-top text-center">Who's Investing</h4>
                 <div class="investors-flex margin-top">
                   <!--Philips Sleep & Respiratory Care-->
                   <div class="investor-post">
-                    <div class="img-container padding-top-bottom">
+                    <div class="img-container">
                         <img src="img/Philips_Investor.jpg" alt="Philips Sleep & Respiratory Care">   
                         <div class="img-credit-bg">
                             <p class="img-credit"><small>Photo Credit: Walnut Capital</small></p>
@@ -961,7 +950,7 @@
                   <!--LyGenesis-->
                   <div class="investor-post">
                     <div class="img-container padding-top-bottom">
-                      <img src="img/LyGenesis-logo.png" alt="LyGenesis Logo">
+                      <img class="investor-logo" src="img/LyGenesis-logo.png" alt="LyGenesis Logo">
                     </div>
                     <div class="post-container">
                       <h3>LyGenesis</h3>
@@ -995,11 +984,11 @@
 
         <!-- Distribution -->
         <section id="distribution">
-            <div class="wrapper medium-margin-top margin-bottom">
+            <div class="wrapper medium-margin-top medium-margin-bottom">
               <h1 class="text-center margin-top text-upper">Distribution</h1>
               <h2 class="text-center">Distribution Delivers Big Deals in 2018</h2> 
               <!--who's investing-->
-              <div id="investing-7" class="investors medium-margin-top medium-margin-bottom">
+              <div id="investing-6" class="investors medium-margin-top medium-margin-bottom">
                 <h4 class="underline thin-margin-top text-center">Who's Investing</h4>
                 <div class="investors-flex margin-top">
                   <!--Urban Outfitters, Inc.-->
@@ -1043,7 +1032,7 @@
               <!--Quote-->
               <div class="margin-top medium-margin-bottom">
                 <div class="quote-flex">
-                  <img class="quote-img" src="img/urbn_logo.jpg" alt="URBN logo">
+                  <img class="quote-img" src="img/urbn.png" alt="URBN logo">
                   <div class="quote-container">
                     <div class="quote-2">
                         “What brings us here is really simple: It’s the people, the quality of the people … and I think you’ve got a resilient workforce.”
@@ -1056,20 +1045,43 @@
         </section>
         <!-- Learn More -->
         <section id="learn">
-            <div class="wrapper medium-margin-top margin-bottom">
-              <h1 class="text-center margin-top text-upper">Learn More</h1>
-           
-             
-            </div> <!--end of wrapper-->
+          <div class="wrapper medium-margin-top margin-bottom">
+            <h1 class="text-center margin-top text-upper">Learn More</h1>
+            <div class="deeper-dive-flex text-center">
+              <div class="dive-box">
+                <p class="lead">
+                  <a href="">About the Pittsburgh Regional Alliance (PRA), the Allegheny Conference’s economic development marketing affiliate</a>
+                </p>
+              </div>
+              <div class="dive-box">
+                <p class="lead">
+                  <a href="">About “Why Pittsburgh for Business Investment”</a>
+                </p>
+              </div>
+            </div>
+            <div class="margin-top medium-margin-bottom">
+                <div class="button-dark text-center"><a href="https://www.pittsburghregion.org/contact/" target="_blank">For a deeper dive into what Pittsburgh has that innovation-focused companies should want: CLICK HERE</a></div> 
+            </div>
+          </div> <!--end of wrapper-->
         </section>
         <!-- put your content here -->
       </main> <!-- cd-main-content -->
-     
+      <footer>
+        <div class="container opening-bg padding-top-bottom">
+          <div class="color-overlay"></div>
+          <div class="opening-text">
+            <div class="credit thin-margin-bottom">
+              <img src="img/accd_white_logo.svg" class="accd-logo" alt="Allegheny Conference on Community Development logo">
+              <p><small>Complied by the Pittsburgh Regional Alliance, the economic development marketing affiliate of the Allegheny Conference</small></p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
       <nav id="cd-lateral-nav" class="lateral-menu-is-open">
         <ul class="cd-navigation">
           <li class="item-has-children">
-            <a href="#0">Scorecard 2018</a>
+            <a href="#home">Scorecard 2018</a>
             <ul class="sub-menu">
               <li><a href="#headlines">Headlines</a></li>
               <li><a href="#snapshot">Snapshot</a></li>

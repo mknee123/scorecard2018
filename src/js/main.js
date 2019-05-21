@@ -68,7 +68,7 @@ jQuery(document).ready(function($){
         $body = $('body');
 
     function resize() {
-        if ($window.width() > 768) {
+        if ($window.width() > 1024) {
             return $menuOpen.addClass('lateral-menu-is-open') && $header.addClass('lateral-menu-is-open') && $main.addClass('lateral-menu-is-open') && $body.addClass('overflow-hidden');
         }
 

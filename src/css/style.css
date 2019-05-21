@@ -8,7 +8,6 @@
     --post-divider-bar: #40424d;
     --post-bg-color: #f8f8f8;
     font-size: 14px;
-
 }
 /*** COMMON STYLES ***/
 .thin-margin-top { margin-top: 1rem;}
@@ -23,6 +22,7 @@
 .padding-top { padding-top: 2rem;}
 .padding-bottom { padding-bottom: 2rem;}
 .padding-top-bottom { padding-top: 2rem; padding-bottom: 2rem;}
+.inner-padding { padding: 2rem 1rem;}
 .text-upper { text-transform: uppercase;}
 .text-capitalize { text-transform: capitalize;}
 .text-normal-case { text-transform: none;}
@@ -40,6 +40,7 @@ h2 {
     font-family: var(--open-sans);
     font-size: 1.75rem;
     margin-top:1.5rem;
+    word-wrap: break-word;
 }
 
 h3 {
@@ -167,7 +168,8 @@ Main components
     height: 50px;
     /* width: 100%; */
     width:50px;
-    background: #4e6361;
+    background: #00041d;
+    opacity: .8;
     z-index: 3;
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
@@ -256,7 +258,7 @@ Main components
     top: 0;
     height: 100%;
     width: 50px;
-    background-color: #64807d;
+    background-color: #00041d;
   }
   #cd-menu-trigger .cd-menu-text {
     height: 100%;
@@ -349,7 +351,7 @@ Main components
     /* the secondary navigation is covered by the main element */
     z-index: 2;
     width: 260px;
-    background-color: #40424d;
+    background-color: #00041d;
     overflow-y: auto;
     /* Force Hardware Acceleration in WebKit */
     /* maybe add back in later
@@ -596,7 +598,7 @@ Opening
   max-width:300px;
   width: 100%;
   display: block;
-  margin: 0 1rem;
+  margin: 0 auto;
 }
 .quote-container {
   margin:0 auto;
@@ -652,16 +654,39 @@ Opening
   border: 1px solid black;
   padding: 1rem;
   text-transform: uppercase;
+  transition: all .4s ease-in-out;
 }
 .button a {
   text-decoration: none;
   color: black;
+  transition: all .4s ease-in-out;
 }
 .button:hover {
 background: black;
 }
 .button:hover a {
   color:white;
+}
+.button-dark {
+  margin: 0 auto;
+  max-width: max-content;
+  border: 1px solid #fff;
+  background: black;
+  padding: 1rem;
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
+}
+.button-dark a {
+  text-decoration: none;
+  color:white
+  transition: all .4s ease-in-out;
+}
+.button-dark:hover {
+  background: white;
+  border: 1px solid black
+}
+.button-dark:hover a {
+  color: black;
 }
 /** Investors post box layout and styles **/
 .investors-flex {
@@ -673,9 +698,8 @@ background: black;
   justify-content: center;
 }
 .investor-post {
- position: relative;
  padding: 1rem;
- max-width: 350px;
+ max-width: 420px;
  width: 100%;
 }
 .img-container {
@@ -684,8 +708,11 @@ background: black;
 .investor-post img {
   display: block; 
   margin: 0 auto;
-  max-width: 350px;
+  max-width: 420px;
   width: 100%;
+}
+img.investor-logo {
+  max-width: 320px;
 }
 .img-credit-bg {
   position: absolute;
@@ -710,7 +737,7 @@ background: black;
   padding: 1rem;
   background: var(--post-bg-color);
   border-top: solid 3px var(--post-divider-bar);
-  max-width: 350px;
+  max-width: 420px;
 }
 .deeper-dive-flex {
   display: flex;
@@ -721,8 +748,8 @@ background: black;
   flex-wrap: wrap;
 }
 .dive-box {
-  flex: 1;
   padding: 1rem;
+  width: 100%;
 }
 .dive-box p {
   padding: 0 1rem;
@@ -754,12 +781,15 @@ background: black;
   .quote {
     font-size:1.25rem;
   }
-  
-  .wrapper {
-    left: 10%;
-  }
   .quote-2 {
     font-size: 1.28rem;
+  }
+  .dive-box {
+    flex: 1;
+    padding: 1rem;
+  }
+  .numbers-flex div {
+    padding: 0 3rem;
   }
 }
 
@@ -788,6 +818,9 @@ background: black;
   }
   .wrapper {
     left: 8%;
+  }
+  .investors-flex {
+    justify-content: flex-start;
   }
 }
 
