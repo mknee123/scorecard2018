@@ -82,6 +82,9 @@ strong {
 em {
   font-style: italic;
 }
+.un-italic {
+  font-style:normal;
+}
 sup {
   vertical-align: super;
   font-size: smaller;
@@ -99,6 +102,10 @@ main ul li {
 main ul li ul {
   margin-top:0;
   list-style-type: circle;
+}
+main ul li ul li{
+  line-height: 1.1;
+  margin-top:.45rem;
 }
 /* -------------------------------- 
 
@@ -669,20 +676,21 @@ Opening
   margin: 0 auto;
   max-width: max-content;
   border: 1px solid black;
+  background: black;
   padding: 1rem;
   text-transform: uppercase;
   transition: all .4s ease-in-out;
 }
 .button a {
   text-decoration: none;
-  color: black;
+  color:white;
   transition: all .4s ease-in-out;
 }
 .button:hover {
-background: black;
+background: white;
 }
 .button:hover a {
-  color:white;
+  color:black;
 }
 .button-dark {
   margin: 0 auto;
