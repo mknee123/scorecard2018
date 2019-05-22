@@ -367,7 +367,7 @@ Main components
     -o-transform: translateX(80px);
     transform: translateX(80px); */
     opacity: .8;
-    transition: all .4s ease-in-out;
+    transition: all .4s;
   }
   #cd-lateral-nav .cd-navigation {
     margin: 10px 0 16px;
@@ -678,8 +678,11 @@ background: black;
 }
 .button-dark a {
   text-decoration: none;
-  color:white
+  color:white;
   transition: all .4s ease-in-out;
+}
+.button-dark a:visited {
+  color:#f8f8f8;
 }
 .button-dark:hover {
   background: white;

@@ -64,19 +64,21 @@ jQuery(document).ready(function($){
     var $window = $(window),
         $menuOpen = $('nav'),
         $header = $('header'),
-        $main = $('main'),
+		$main = $('main'),
+		$triggerMenu = $('a#cd-menu-trigger'),
         $body = $('body');
 
     function resize() {
         if ($window.width() > 1024) {
-            return $menuOpen.addClass('lateral-menu-is-open') && $header.addClass('lateral-menu-is-open') && $main.addClass('lateral-menu-is-open') && $body.addClass('overflow-hidden');
+            return $menuOpen.addClass('lateral-menu-is-open') && $header.addClass('lateral-menu-is-open') && $main.addClass('lateral-menu-is-open') && $body.addClass('overflow-hidden') && $triggerMenu.addClass('is-clicked');
         }
 
         $menuOpen.removeClass('lateral-menu-is-open');
         $header.removeClass('lateral-menu-is-open');
         $main.removeClass('lateral-menu-is-open');
-        $body.removeClass('overflow-hidden');
-        }
+		$body.removeClass('overflow-hidden');
+		$triggerMenu.removeClass('is-clicked');
+    }
     
     function recheck() {
         if( $menuOpen.hasClass('lateral-menu-is-open') ) {
@@ -85,8 +87,9 @@ jQuery(document).ready(function($){
         $body.removeClass('overflow-hidden');
     }    
 
-        $window
-            .resize(resize)
-            .trigger('resize');
-        $window.resize(recheck).trigger('resize');    
+	$window
+		.resize(resize)
+		.trigger('resize');
+	$window.resize(recheck).trigger('resize');    
+		
 });
