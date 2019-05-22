@@ -85,7 +85,12 @@ main ul {
   margin-left:1rem;
 }
 main ul li {
-  margin-top:.5rem;
+  margin-top:.65rem;
+  line-height: 1.2;
+}
+main ul li ul {
+  margin-top:0;
+  list-style-type: circle;
 }
 /* -------------------------------- 
 
@@ -492,7 +497,7 @@ Opening
 .color-overlay {
   position: absolute;
   background: #000;
-  opacity: .6;
+  opacity: .4;
   height: 100%;
   width: 100%;
   top: 0;
@@ -618,7 +623,7 @@ Opening
   color: var(--scorecard-orange);
 }
 .numbers-lg {  
-  font-size: 7rem;
+  font-size: 6rem;
   font-family: var(--open-sans);
   font-weight: 700;
 }
